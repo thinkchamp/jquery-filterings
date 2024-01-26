@@ -1,0 +1,35 @@
+
+$("ul li").last().addClass("hello");
+$("ul li").first().addClass("hello");
+
+$("ul li").eq(2).addClass("hello");
+
+$("ul li").eq(-2).addClass("hello");
+
+$("ul li").filter(":odd").addClass("hello");
+
+$("ul li").filter(":even").addClass("hello");
+
+
+$("ul li").filter(function(index){
+  return index % 2 !== 0;
+
+}).addClass("hello");
+
+
+$("ul li").has("ul").addClass("hello");
+$("ul li").not(":even").addClass("hello");
+
+
+
+
+$("ul li").not(function(index){
+  return index % 2 !== 0;
+
+}).addClass("hello");
+
+
+
+$("ul li").slice(0,6).addClass("hello"); 
+
+$("ul li").slice(-7,-3).addClass("hello");
